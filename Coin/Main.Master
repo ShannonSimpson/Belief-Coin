@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Coin.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GE ITLP Belief Coin</title>
+    <link href="Style/Main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="MainData">
+            <div id="Header">
+                GE ITLP Belief Coin
+            </div>
+            <div id="Menu">
+                <asp:Panel ID="pnlMenu" runat="server">
+                    <a href="Home.aspx">Home</a>  |  <a href="Manage_Acct.aspx">Manage Account</a>  |  <a href="About.aspx">About</a>
+                </asp:Panel></div>
+            <div id="Content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Footer">GE ITLP Immersion 1 Project</div>
+    </div>
+    </form>
+</body>
+</html>
